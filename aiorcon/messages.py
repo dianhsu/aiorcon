@@ -10,7 +10,7 @@ from aiorcon.exceptions import RCONMessageError, RCONError
 class RCONMessage(object):
     """Represents a RCON request or response."""
 
-    ENCODING = "ascii"
+    ENCODING = "utf8"
 
     class Type(enum.IntEnum):
         """Message types corresponding to ``SERVERDATA_`` constants."""
